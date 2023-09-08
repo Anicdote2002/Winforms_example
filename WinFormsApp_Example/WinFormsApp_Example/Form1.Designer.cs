@@ -32,6 +32,8 @@
             label1 = new Label();
             txtName = new TextBox();
             button1 = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // lstNames
@@ -69,17 +71,29 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 198);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 353);
+            ClientSize = new Size(382, 485);
+            Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(txtName);
             Controls.Add(label1);
             Controls.Add(lstNames);
             Name = "Form1";
             Text = "Names";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -90,5 +104,6 @@
         private Label label1;
         private TextBox txtName;
         private Button button1;
+        private DataGridView dataGridView1;
     }
 }
